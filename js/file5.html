@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+	<script type="text/javascript">
+		student=['tri','poo','edna','hema','tae','ryan'];
+		Array.prototype.loop=function()
+		{
+			for(i=0;i<this.length;i++)
+			{
+				document.write(this[i]+"<br>");
+			}
+		}
+		document.write("the list of students:<br>");
+		student.loop();
+		document.write("<hr>")
+		document.write("the number of students are:"+student.length);
+		document.write("<hr>")
+		document.write("the sorted list of students:<br>");
+		student.sort();
+		student.loop();
+		document.write("<hr>")
+		document.write("the reverse list of students:<br>");
+		student.reverse();
+		student.loop();
+		document.write("<hr>")
+		document.write("the list  after removing a student:<br>");
+		student.pop();
+		student.loop();
+		document.write("<hr>")
+		document.write("the list after adding a student:<br>");
+		student.push("zac");
+		student.loop();
+	</script>
+
+</body>
+</html>

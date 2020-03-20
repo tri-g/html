@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person=new Object();
+		person.name="Tri";
+		person.age="22";
+		person.salaryFeb=21000;
+		person.salaryMar=22000;
+		person.salaryApril=21600;
+
+		person.calculateSum=function()
+		{
+			return(person.salaryFeb+person.salaryMar+person.salaryApril);
+		};
+		person.display=function()
+		{
+			document.write("Name: "+person.name+"<br>Age: "+person.age);
+			var sum=person.calculateSum();
+			document.write("<br>Salary3Months: "+sum);
+		};
+		person.display();
+
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	</script>
+</head>
+<body>
+	<p>Enter the value</p>
+	<input type="text" name="x" id="x">
+	<input type="button" value="sum" onclick="add()"></input>
+	<p id="res"></p>
+	<script type="text/javascript">
+		function add()
+		{
+			var x=parseInt(document.getElementById("x").value);
+			var y=2;
+			var sum=x+y;
+			/*document.write(sum);*/
+			document.getElementById("res").innerHTML=sum;
+
+		}
+	</script>
+	
+
+</body>
+</html>

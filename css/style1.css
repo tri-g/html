@@ -1,0 +1,37 @@
+ .container {
+
+  max-width: 750px;
+
+  margin: 20px auto 0 auto;
+
+  padding: 30px;
+
+  background-color: #FFF;
+
+}
+
+
+
+.form-row {
+
+  padding: 10px 0;
+
+  display: flex;
+
+}
+
+
+
+.form-row label {
+
+  padding-right: 10px;
+
+}
+
+
+
+.form-row input {
+
+  flex: 1;
+
+}

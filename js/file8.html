@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+	<form action="file3.html" method="post">
+		<input type="text" name="fname" required>
+		<!-- <input type="submit" name="submit"> -->
+		<button type="" onclick="dd()">go</button>
+
+	</form>
+	<script type="text/javascript">
+		function dd()
+		{
+			x=document.forms["myForm"]["fname"].value
+			if(x=="")
+			{
+				alert("must be filled")
+				return false
+			}
+		}
+	</script>
+
+</body>
+</html>

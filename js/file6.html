@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+<select id="select"></select>
+<button type="button" onclick="qq()">Click</button>
+<script type="text/javascript">
+	function qq()
+	{
+		var select=document.getElementById("select"),arr=["html","jss","css","java","python"];
+		for(i=0;i<arr.length;i++)
+		{
+			var option=document.createElement("option");
+			txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value",arr[i])
+			select.insertBefore(option,select.firstChild);
+		}
+
+	}
+
+</script>
+</body>
+</html>

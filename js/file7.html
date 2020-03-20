@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+	<script type="text/javascript">
+		m=prompt("enter the  no of rows");
+		n=prompt("enter the  no of columns");
+		if(m=="" || m==null)
+			m=10;
+		if(n=="" || n==null)
+			n=10;
+		tableloop();
+		function tableloop()
+		{
+			output="<table border='1' width='500' >";
+			for(i=1;i<=m;i++)
+			{
+			output=output+"<tr>";
+			for(j=1;j<=n;j++)
+			{
+				output=output+"<td>"+i*j+"</td>";
+			}
+			output=output+"</tr>"
+			}
+
+			output=output+"</table>"
+			document.write(output)
+
+}
+
+	</script>
+
+</body>
+</html>
